@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WriteData"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_et_items" />
+
+        <EditText
+            android:id="@+id/etItemNumber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorEditText"
+            android:hint="(item number)"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_et_item_des" />
+
+        <EditText
+            android:id="@+id/etItemDescription"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorEditText"
+            android:hint="(item description)"
+            android:inputType="textCapCharacters"
+            android:padding="10dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10sp"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btnWriteItemCode"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:background="@drawable/buttonbg"
+            android:text="@string/message_write_tag"
+            android:textColor="@color/colorButtonText" />
+
+    </LinearLayout>
+
+</LinearLayout>
